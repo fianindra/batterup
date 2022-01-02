@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/jpg" href="image/logo.png"/>
+    <title>Beranda</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo"> BatterUp </a> 
+
+    <nav class="navbar">
+        <a href="index.html">Beranda</a>
+        <a href="Belanja.html">Belanja</a>
+        <a href="Pesan.html">Pesan</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="cari disini..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/pastry.png" alt="">
+            <div class="content">
+                <h3>Pastry</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">Rp 10.000</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/macaron.png" alt="">
+            <div class="content">
+                <h3>Macaron</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">Rp 8.500</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cupcake.png" alt="">
+            <div class="content">
+                <h3>Cupcake</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">Rp 10.000</span>
+            </div>
+        </div>
+        <h3 class="total"> Total : <span>Rp 28.500</span> </h3>
+        <a href="Pesan.html" class="btn">Pesan</a>
+    </div>
+
+    
+    <div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>LOGIN</h3>
+        <span>Username</span>
+        <input type="email" name="" class="box" placeholder="Masukkan Email Anda" id="">
+        <span>Password</span>
+        <input type="password" name="" class="box" placeholder="Masukkan Password Anda" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> Ingat Password</label>
+        </div>
+        <input type="submit" value="Login" class="btn">
+        <p>Lupa Password? <a href="#">Klik Disini</a></p>
+        <p>Belum Punya Akun? <a href="#">Buat Akun</a></p>
+    </form>
+	</div>
+</header>
+
+<section class="Beranda">
+
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <span>SWEET TEETH</span>
+                <h3>Kemanisan dari Oven</h3>
+                <a href="Pesan.html" class="btn">Pesan Sekarang!</a>
+            </div>
+            <div class="image">
+                <img src="image/cupcake.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>DESSERT DELIGHTS</span>
+                <h3>Kelezatan makanan penutup</h3>
+                <a href="Pesan.html" class="btn">Pesan Sekarang!</a>
+            </div>
+            <div class="image">
+                <img src="image/macaron.png" alt="">
+            </div>
+        </div>
+		
+		<div class="slide">
+            <div class="content">
+                <span>PERFECT PASTRIES</span>
+                <h3>Kelembutan adonan pastry</h3>
+                <a href="Pesan.html" class="btn">Pesan Sekarang!</a>
+            </div>
+            <div class="image">
+                <img src="image/pastry.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>CLEVER COOKIE</span>
+                <h3>Biskuit hangat dan renyah</h3>
+                <a href="Pesan.html" class="btn">Pesan Sekarang!</a>
+            </div>
+            <div class="image">
+                <img src="image/cookie.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+</section>
+
+<section class="about">
+
+    <div class="image">
+        <img src="image/logo.png" alt="">
+    </div>
+
+    <div class="content">
+        <span>Selamat Datang di BatterUp !</span>
+        <h3>Kelembutan, Rasa Manis, dan Kehangatan menjadi satu.</h3>
+        <p>Batterup! merupakan toko kue yang menyediakan bermacam macam jenis kue, mulai dari cupcake, macaron, pastry sampai kue tradisional. </p>
+        <p>Kami memilih usaha dibidang makanan karena usaha ini disesuaikan dengan kebutuhan dan dengan skill yang kami miliki serta faktor pendukung yang memadai untuk mengembangkan usaha ini.</p>
+        <a href="Tentang Kami.html" class="btn">Baca Selengkapnya..</a>
+    </div>
+
+</section>
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="image/onde.jpeg" alt="">
+        <div class="content">
+            <span>Telah Hadir</span>
+			<h3>ONDE ONDE</h3>
+            <a href="Pesan.html" class="btn">Pesan Sekarang</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/putu.jpeg" alt="">
+        <div class="content">
+            <span>Telah Hadir</span>
+            <h3>PUTU AYU</h3>
+            <a href="Pesan.html" class="btn">Pesan Sekarang</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/pie.jpeg" alt="">
+        <div class="content">
+            <span>Telah Hadir</span>
+            <h3>PIE BUAH</h3>
+            <a href="Pesan.html" class="btn">Pesan Sekarang</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Tautan Cepat</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i>Beranda</a>
+            <a href="Belanja.html"> <i class="fas fa-arrow-right"></i> Belanja</a>
+            <a href="Pesan.html"> <i class="fas fa-arrow-right"></i> Pesan</a>
+        </div>
+
+        <div class="box">
+            <h3>Ikuti Kami!</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="credit">all rights reserved!</section>
+
+<script src="js.js"></script>
+
+</body>
+</html>
